@@ -32,6 +32,8 @@ body {
 }
 
 .nav .brand {
+  text-decoration: none;
+  color: #000;
   font-size: 2.5em;
   font-weight: 600;
   line-height: 3em;
@@ -59,6 +61,7 @@ body {
 
 .nav .menu-item:hover{
   opacity: 1;
+  font-weight: 600;
   border-bottom: 1px solid #000;
 }
 
@@ -154,26 +157,6 @@ body {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.line {
-  background-color: rgba(0, 0, 0, 0.05);
-  height: 1px;
-}
-
-.job-card:hover {
-  background-color: #001AFF;
-  color: #fff;
-}
-
-.job-card-active {
-  background-color: #001AFF;
-  color: #fff;
-}
-
-
-.job-card:hover .line{
-  background-color:rgba(255, 255, 255, 0.15);
-}
-
 .job-header {
   display: flex;
   width: fit-content;
@@ -208,7 +191,7 @@ body {
 }
 
 .job-company {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   opacity: 0.8;
@@ -221,6 +204,12 @@ body {
   line-height: 30px;
   opacity: 0.8;
 }
+
+.line {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 1px;
+}
+
 
 .job-footer {
   display: flex;
@@ -237,7 +226,7 @@ body {
 
 .job-tag {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.07);
   padding: 5px 15px;
   border-radius: 100px;
 }
@@ -247,6 +236,27 @@ body {
   font-weight: 600;
   line-height: 26px;
 }
+
+.job-card:hover {
+  background-color: #001AFF;
+  color: #fff;
+}
+
+.job-card-active { 
+  background-color: #001AFF;
+  color: #fff;
+}
+
+.job-card-active .line,
+.job-card-active .job-tag {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.job-card:hover .line,
+.job-card:hover .job-tag {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 
 
 /* layar kecil */
