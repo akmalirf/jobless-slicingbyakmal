@@ -84,6 +84,11 @@ body {
   color: #000;
 }
 
+.sign-up:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .hero {
   display: flex;
   padding: 135px 0;
