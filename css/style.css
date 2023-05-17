@@ -278,7 +278,7 @@ body {
   .nav .menu {
     display: none;
   }
-  
+
   .nav .brand {
     font-size: 2em;
     line-height: 1.5em;
@@ -293,8 +293,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4em;
+    gap: 2.5em;
     margin-top: 2em;
+  }
+
+  .nav .menu-item {
+    font-size: 16px;
+    text-align: center;
   }
   
   .nav .sign-up {
